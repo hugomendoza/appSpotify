@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $main_color;
+    font-family: $main-font;
+    color: $font-color;
+}
+
+.container {
+    background-color: $container_color;
+    width: 420px;
+    margin: auto;
+    padding: 30px;
+}
+
+#input-search {
+    margin-top: 20px;
+
+    .form-control {
+        width: 400px;
+        font-size: 14px;
+        border-radius: 3px;
+        padding: 10px;
+        border: 1px solid lightgray;
+    }
+ }

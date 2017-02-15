@@ -1,0 +1,15 @@
+script(id="spotify-template" type="text/x-handlebars-template").
+    {{#each tracks.items}}
+        <div class="data">
+            <img src="{{this.album.images.0.url}}" class="cover">
+        </div>
+        <div class="data">
+            <h4 class="song">{{this.name}}</h4>
+            <h5 class="artist">{{this.artists.0.name}}</h5>
+            <h5 class="popularity">Popularity: {{popularity}}</h5>
+            <audio controls class="preview-song">
+            <source src="{{this.preview_url}}" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    {{/each}}

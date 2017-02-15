@@ -1,0 +1,43 @@
+.cover {
+    width: 95px;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.resultado {
+    display: inline;
+}
+
+#data-info {
+    display: inline-block;
+}
+
+.data {
+
+    margin-top: 20px;
+    display: inline-block;
+
+    .song {
+        font-size: 16px;
+    }
+
+    .artist {
+        margin-top: 5px;
+        font-weight: normal;
+    }
+
+    .popularity {
+        font-weight: normal;
+        @include background(linear-gradient(#FEBD38, #F7941E) left repeat);
+        width: 95px;
+        margin-top: 5px;
+        padding: 2px 0px;
+        padding-left: 10px;
+        border-radius: 4px;
+        color:$container_color;
+    }
+
+    .preview-song {
+        margin-top: 5px;
+    }
+}
